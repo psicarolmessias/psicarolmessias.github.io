@@ -11172,3 +11172,455 @@ section.resume-section .resume-section-content {
     align-self: flex-start;
   }
 }
+
+/* ============================================
+   ABOUT SECTION STYLES
+   ============================================ */
+
+.about-section {
+  background-color: var(--color-emerald);
+  padding: 5rem 2rem;
+  width: 100%;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 1300px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  object-fit: cover;
+}
+
+.about-content {
+  flex: 1;
+  color: var(--color-white);
+}
+
+.about-label {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+  width: fit-content;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-white);
+  margin: 0 0 2rem 0;
+}
+
+.btn-whatsapp-about {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 0.85rem 1.75rem;
+  background-color: var(--color-terracotta);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: 2px solid var(--color-terracotta);
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(198, 124, 78, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.btn-whatsapp-about i {
+  font-size: 1.5rem;
+}
+
+.btn-whatsapp-about:hover {
+  background-color: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-emerald);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(198, 124, 78, 0.4);
+}
+
+/* Responsive Design for About Section */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-image img {
+    max-width: 280px;
+    padding: 1rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+  }
+
+  .about-section {
+    padding: 3rem 1rem;
+  }
+}
+
+/* ============================================
+   HOW CAN I HELP SECTION STYLES
+   ============================================ */
+
+.help-section {
+  background-color: #f5f5f5;
+  padding: 5rem 2rem;
+  width: 100%;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 1300px;
+}
+
+.help-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.help-label {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-terracotta);
+  border: 2px solid var(--color-terracotta);
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  margin-bottom: 3rem;
+  width: fit-content;
+}
+
+.help-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.help-card {
+  background-color: var(--color-emerald);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.help-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.help-icon {
+  font-size: 2.5rem;
+  color: var(--color-terracotta);
+  margin-bottom: 1rem;
+}
+
+.help-card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0 0 1.5rem 0;
+}
+
+.help-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.help-card-list li {
+  font-size: 0.95rem;
+  color: var(--color-white);
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.help-card-list li:before {
+  content: "●";
+  color: var(--color-terracotta);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.help-card-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design for Help Section */
+@media (max-width: 1024px) {
+  .help-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .help-section {
+    padding: 3rem 1rem;
+  }
+
+  .help-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .help-label {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .help-card {
+    padding: 1.5rem;
+  }
+
+  .help-icon {
+    font-size: 2rem;
+  }
+
+  .help-card-title {
+    font-size: 1.1rem;
+  }
+
+  .help-card-list li {
+    font-size: 0.9rem;
+  }
+}
+
+/* ============================================
+   HOW APPOINTMENTS WORK SECTION STYLES
+   ============================================ */
+
+.appointments-section {
+  background-color: var(--color-terracotta);
+  padding: 5rem 2rem;
+  width: 100%;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 1300px;
+}
+
+.appointments-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.appointments-content {
+  flex: 1;
+  color: var(--color-white);
+}
+
+.appointments-label {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+  width: fit-content;
+}
+
+.appointments-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-white);
+  margin: 0 0 2rem 0;
+}
+
+.btn-whatsapp-appointments {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 0.85rem 1.75rem;
+  background-color: var(--color-emerald);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: 2px solid var(--color-emerald);
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(27, 94, 75, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.btn-whatsapp-appointments i {
+  font-size: 1.5rem;
+}
+
+.btn-whatsapp-appointments:hover {
+  background-color: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-terracotta);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(27, 94, 75, 0.4);
+}
+
+.appointments-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appointments-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  object-fit: cover;
+}
+
+/* Responsive Design for Appointments Section */
+@media (max-width: 768px) {
+  .appointments-container {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .appointments-image img {
+    max-width: 280px;
+    padding: 1rem;
+  }
+
+  .appointments-label {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .appointments-text {
+    font-size: 0.95rem;
+  }
+
+  .appointments-section {
+    padding: 3rem 1rem;
+  }
+}
+
+/* ============================================
+   CONTACT SECTION STYLES
+   ============================================ */
+
+.contact-section {
+  background-color: var(--color-emerald);
+  padding: 3rem 2rem 2rem 2rem;
+  width: 100%;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 1300px;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-label {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+  width: fit-content;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--color-terracotta);
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  border: 2px solid var(--color-terracotta);
+  box-shadow: 0 4px 15px rgba(198, 124, 78, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.contact-btn:hover {
+  background-color: transparent;
+  border-color: var(--color-white);
+  color: var(--color-white);
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(198, 124, 78, 0.5);
+}
+
+/* Responsive Design for Contact Section */
+@media (max-width: 1024px) {
+  /* Grid adjustments for tablet */
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 1rem;
+  }
+
+  .contact-buttons {
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 1.2rem;
+  }
+}
