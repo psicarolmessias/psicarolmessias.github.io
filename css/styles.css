@@ -110,6 +110,14 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/* Centraliza todo o conteúdo da página e define gutters simétricos */
+#container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -11005,12 +11013,12 @@ section.resume-section .resume-section-content {
 
 .hero-section {
   position: relative;
-  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   overflow: hidden;
+  padding: 0; /* container will handle spacing */
 }
 
 .hero-background {
@@ -11023,7 +11031,7 @@ section.resume-section .resume-section-content {
   background-position: right;
   background-repeat: no-repeat;
   z-index: 1;
-  border-radius: 0.5rem;
+  border-radius: 0; /* container will handle rounding */
 }
 
 /* Dark overlay for better text readability */
@@ -11042,24 +11050,40 @@ section.resume-section .resume-section-content {
   position: relative;
   z-index: 3;
   width: 100%;
-  max-width: 33%;
-  height: 100vh;
-  padding: 3rem 2rem;
+  max-width: 45%;
+  height: auto;
+  padding: 2rem 2rem;
   text-align: left;
-  background: rgba(255, 255, 255, 0.60);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.80);
+  backdrop-filter: blur(8px);
   border-radius: 0.5rem;
-  margin-left: auto;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
 .hero-title {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.8rem;
   color: var(--color-emerald);
+}
+
+/* Container to keep hero section consistent with other sections */
+.hero-container {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  gap: 4rem;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  justify-content: flex-end; /* Aligns child elements to the right */
+
 }
 
 .hero-location {
@@ -11206,7 +11230,7 @@ section.resume-section .resume-section-content {
   width: 100%;
   max-width: 350px;
   height: auto;
-  border-radius: 0.5rem;
+  border-radius: 1.5rem;
   padding: 2rem;
   object-fit: cover;
 }
