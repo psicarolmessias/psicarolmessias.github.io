@@ -11017,6 +11017,7 @@ section.resume-section .resume-section-content {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center;
   overflow: hidden;
   padding: 0; /* container will handle spacing */
 }
@@ -11028,7 +11029,7 @@ section.resume-section .resume-section-content {
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
   border-radius: 0; /* container will handle rounding */
@@ -11166,9 +11167,10 @@ section.resume-section .resume-section-content {
     width: 100%;
     height: auto;
     min-height: auto;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
     backdrop-filter: none;
-    border-radius: 0;
+    border-radius: 0.5rem;
     margin-left: 0;
     margin-bottom: 0;
     padding: 3rem 2rem;
@@ -11230,8 +11232,7 @@ section.resume-section .resume-section-content {
   width: 100%;
   max-width: 350px;
   height: auto;
-  border-radius: 1.5rem;
-  padding: 2rem;
+  border-radius: 1.0rem;
   object-fit: cover;
 }
 
@@ -11298,7 +11299,9 @@ section.resume-section .resume-section-content {
 
   .about-image img {
     max-width: 280px;
-    padding: 1rem;
+    height: auto;
+    border-radius: 1.0rem;
+    object-fit: cover;
   }
 
   .about-title {
@@ -11523,6 +11526,7 @@ section.resume-section .resume-section-content {
 .appointments-image {
   flex: 1;
   display: flex;
+  border-radius: 1.0rem;
   justify-content: center;
   align-items: center;
 }
@@ -11531,8 +11535,7 @@ section.resume-section .resume-section-content {
   width: 100%;
   max-width: 350px;
   height: auto;
-  border-radius: 1.5rem;
-  padding: 2rem;
+  border-radius: 1.0rem;
   object-fit: cover;
 }
 
@@ -11545,7 +11548,7 @@ section.resume-section .resume-section-content {
 
   .appointments-image img {
     max-width: 280px;
-    padding: 1rem;
+    border-radius: 1.0rem;
   }
 
   .appointments-label {
