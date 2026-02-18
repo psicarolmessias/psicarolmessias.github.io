@@ -11651,3 +11651,26 @@ section.resume-section .resume-section-content {
     font-size: 1.2rem;
   }
 }
+
+/* Clinic Images Section */
+.clinic-images-section {
+  padding: 0;
+  width: 100%;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 1300px;
+  overflow: hidden; /* to ensure rounded corners clip the images */
+}
+
+.clinic-images-container {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.clinic-images-container img {
+  width: 50%;
+  height: auto;
+  display: block;
+}
