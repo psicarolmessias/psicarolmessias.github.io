@@ -11192,10 +11192,10 @@ section.resume-section .resume-section-content {
   }
 
   .btn-whatsapp {
-    padding: 0.85rem 1.75rem;
+    padding: 0.85rem 1.25rem;
     font-size: 0.9rem;
     width: fit-content;
-    align-self: flex-start;
+    align-self: anchor-center;
   }
 }
 
